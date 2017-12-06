@@ -11,7 +11,7 @@ class AddPerson extends Component {
             <div style={{marginTop: '10px'}}>
 
                 <h1>Add a new person</h1>
-                
+
             </div>
         )
     }

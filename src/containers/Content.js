@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import Aux from './../hoc/Auxiliary';
-import Layout from './UI/Layout';
+
 class Content extends Component {
 
     render() {
