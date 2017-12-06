@@ -12,16 +12,19 @@ class Header extends Component {
                     <div className="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul className="navbar-nav">
                             <li className="nav-item active">
-                                <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
+                                <a className="nav-link" href="/">Home </a>
                             </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="/">Add Person</a>
+                            <li className="nav-item active">
+                                <a className="nav-link" href="/get-people">Get People</a>
                             </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="/">Update Person</a>
+                            <li className="nav-item active">
+                                <a className="nav-link" href="/add-person">Add Person</a>
                             </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="/">Delete Person</a>
+                            <li className="nav-item active">
+                                <a className="nav-link" href="/update-person">Update Person</a>
+                            </li>
+                            <li className="nav-item active">
+                                <a className="nav-link" href="/delete-person">Delete Person</a>
                             </li>
 
                         </ul>

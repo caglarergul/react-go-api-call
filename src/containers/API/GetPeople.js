@@ -28,15 +28,23 @@ class GetPeople extends Component {
     render() {
 
         let people = this.state.people.map(person => {
-            return <Person key={person.id} firstname={person.firstname} lastname={person.lastname} />;
+            return <Person key={person.id} id={person.id} firstname={person.firstname} lastname={person.lastname} />;
         });
 
         return(
-            <div>
+            <div style={{marginTop: '10px'}}>
 
                 <h1>People</h1>
                 <div>
-                    <ul class="list-group"> {people} </ul>
+                    <table className="table table-striped">
+                        <thead className="thead-dark">
+                        <th>#</th>
+                        <th>FIRST NAME</th>
+                        <th>LAST NAME</th>
+                        </thead>
+                        <tbody> {people}</tbody>
+
+                    </table>
                 </div>
 
             </div>

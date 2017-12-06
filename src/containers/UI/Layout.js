@@ -6,12 +6,14 @@ import Header from '../Header';
 
 const layout = (props) => {
     return (
-        <Aux>
+
             <div className="container-fluid">
                 <Header/>
-                <Content/>
+
+                <div className="container"> {props.children}</div>
+
             </div>
-        </Aux>
+
     );
 };
 

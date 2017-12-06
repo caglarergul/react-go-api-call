@@ -1,15 +1,14 @@
 import React, {Component} from 'react';
-import GetPeople from './API/GetPeople';
-
+import Aux from './../hoc/Auxiliary';
+import Layout from './UI/Layout';
 class Content extends Component {
-
-
-
 
     render() {
 
         return (
-            <main className="container" style={{marginTop: '10px'}}>
+
+
+            <main  style={{marginTop: '10px'}}>
 
                 <div className="jumbotron">
                     <h1 className="display-3">Hello again.</h1>
@@ -26,10 +25,9 @@ class Content extends Component {
                     </p>
                 </div>
 
-                <hr />
 
-                <GetPeople/>
             </main>
+
 
         );
 
