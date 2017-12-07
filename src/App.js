@@ -6,6 +6,8 @@ import Layout from './containers/UI/Layout';
 
 import AddPerson from './containers/API/AddPerson';
 import GetPeople from './containers/API/GetPeople';
+import DeletePerson from './containers/API/DeletePerson';
+import UpdatePerson from './containers/API/UpdatePerson';
 
 class App extends Component {
     render() {
@@ -17,6 +19,8 @@ class App extends Component {
                     <Route path="/add-person" component={AddPerson}/>
 
                     <Route path="/get-people" component={GetPeople}/>
+                    <Route path="/delete-person" component={DeletePerson}/>
+                    <Route path="/update-person" component={UpdatePerson}/>
 
                 </Layout>
             </Aux>
