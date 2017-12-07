@@ -19,7 +19,7 @@ class Content extends Component {
                     <p className="lead">
                         <a className="btn btn-secondary btn-lg" rel="noopener noreferrer" href="https://github.com/denizgokce" target="_blank"
                            role="button">Go Api Repo</a> &nbsp;
-                        <a className="btn btn-primary btn-lg" rel="noopener noreferrer"href="https://github.com/caglarergul" target="_blank"
+                        <a className="btn btn-primary btn-lg" rel="noopener noreferrer" href="https://github.com/caglarergul" target="_blank"
                            role="button">ReactJS Repo</a>
                     </p>
                 </div>
