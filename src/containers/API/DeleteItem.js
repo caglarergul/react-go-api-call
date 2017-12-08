@@ -18,7 +18,7 @@ class DeleteItem extends Component {
                 <th scope="row">{this.props.id}</th>
                 <td>{this.props.firstname}</td>
                 <td>{this.props.lastname}</td>
-                <td style={{width: '60px'}}><button onClick={this.deletePersonHandler} className="btn btn-sm btn-danger">Delete</button></td>
+                <td style={{width: '60px'}}><button onClick={this.deletePersonHandler} className="btn btn-sm btn-danger"><i className="fa fa-trash"></i> Delete</button></td>
             </tr>
         )
     }

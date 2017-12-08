@@ -22,7 +22,8 @@ class AddPerson extends Component {
         axios.post("https://rest-api-example-go.herokuapp.com/people", data)
             .then(response => {
                 console.log(response);
-                alert("Successfully added!")
+                alert("Successfully added!");
+                window.location.reload();
             });
 
     };
@@ -41,7 +42,7 @@ class AddPerson extends Component {
                     <div className="form-group">
                         Lastname: <input type="text" className="form-control" value={this.state.lastname} onChange={(event) => this.setState({lastname: event.target.value})}/>
                     </div>
-                    <button className="btn btn-success btn-block" onClick={this.postDataHandler}>Add Person</button>
+                    <button className="btn btn-success btn-block" onClick={this.postDataHandler}><i className="fa fa-plus"></i> Add Person</button>
                 </div>
             </div>
         )
