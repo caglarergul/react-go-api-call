@@ -11,6 +11,7 @@ class AddPerson extends Component {
     state = {
         firstname: '',
         lastname: ''
+
     };
 
     postDataHandler = () => {

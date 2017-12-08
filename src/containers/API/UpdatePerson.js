@@ -45,7 +45,7 @@ class UpdatePerson extends Component {
                     <th>#</th>
                     <th>FIRST NAME</th>
                     <th>LAST NAME</th>
-                    <th>Update</th>
+                    <th style={{width:'60px'}}>Update</th>
                     </thead>
                     <tbody>{people}</tbody>
                 </table>
