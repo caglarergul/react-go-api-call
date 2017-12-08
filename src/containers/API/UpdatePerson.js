@@ -8,21 +8,21 @@ class UpdatePerson extends Component {
     state = {people: []};
 
 
-    componentDidMount() {
+    componentDidMount() { // getting people from rest api w/ axios
         axios.get("https://rest-api-example-go.herokuapp.com/people").then(response => {
-            const people = response.data;
+            const people = response.data; // load response data to people obj.
             const updatedPeople = people.map(persons => {
-                return {
+                return { // then map that obj and assign to updatedPeople object, this is a basic swap process.
                     ...persons
                 }
             });
 
 
-            this.setState({people: updatedPeople});
+            this.setState({people: updatedPeople}); // finally assign updatedPeople obj to real people obj.
 
         })
             .catch(err => {
-                //console.log(err);
+                console.log(err); // catching errors.
                 this.setState({error: true});
             });
     }
@@ -31,8 +31,11 @@ class UpdatePerson extends Component {
     render() {
 
         let people = this.state.people.map(person => {
+            // Assign key id firstname and lastname attributes and values to PersonInformation Component.
             return <PersonInformation key={person.id} id={person.id} firstname={person.firstname} lastname={person.lastname}/>;
         });
+
+        /* This is just embedding a component.*/
 
         return (
 

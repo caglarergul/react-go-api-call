@@ -17,9 +17,9 @@ class Content extends Component {
                         <br/>If you want to check Go Api repo please click Go Api<br/>
                         or you can check and fork ReactJs Rest Api Repo then click ReactJs Api button.</p>
                     <p className="lead">
-                        <a className="btn btn-secondary btn-lg" rel="noopener noreferrer" href="https://github.com/denizgokce" target="_blank"
+                        <a className="btn btn-secondary btn-lg" rel="noopener noreferrer" href="https://github.com/DenizGokce/ExampleRESTApi" target="_blank"
                            role="button">Go Api Repo</a> &nbsp;
-                        <a className="btn btn-primary btn-lg" rel="noopener noreferrer" href="https://github.com/caglarergul" target="_blank"
+                        <a className="btn btn-primary btn-lg" rel="noopener noreferrer" href="https://github.com/caglarergul/react-go-api-call" target="_blank"
                            role="button">ReactJS Repo</a>
                     </p>
                 </div>

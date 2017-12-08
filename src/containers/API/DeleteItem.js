@@ -1,9 +1,14 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 
-
+/**
+ * I divided DeletePerson to two components. This one is DeleteItem. This component is rendering every item partial.
+ * Divide and render is pretty cool thats why I choose it.
+ * **/
 
 class DeleteItem extends Component {
+
+
     deletePersonHandler = () => {
         axios.delete("https://rest-api-example-go.herokuapp.com/people/" + this.props.id)
             .then(response => {

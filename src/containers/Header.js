@@ -5,7 +5,7 @@ class Header extends Component {
         return (
             <header className="container">
                 <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-                    <a className="navbar-brand" href="/">GOlang REST API</a>
+                    <a className="navbar-brand" href="/">GO REST API</a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                             aria-label="Toggle navigation">
